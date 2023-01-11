@@ -37,7 +37,7 @@
 
             <!-- ? Tasks list -->
             <ul class="list-group w-75 mx-auto">
-                <li v-for="(task, i) in tasks" class="list-group-item d-flex justify-content-between" :class="{'text-decoration-line-through': task.done === true}">
+                <li v-for="(task, i) in tasks" class="list-group-item d-flex justify-content-between" :class="{'text-decoration-line-through': task.done === true}" @click="isDone(i)">
                     {{task.text}}
                     <button type="button" class="btn-close" @click="deleteTask(i)"></button>
                 </li>

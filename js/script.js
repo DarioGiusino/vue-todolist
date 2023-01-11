@@ -32,6 +32,9 @@ const app = Vue.createApp({
         },
         clearText(){
             this.newText = '';
+        },
+        isDone(target){
+            this.tasks[target].done = !this.tasks[target].done
         }
     }
 });
