@@ -37,7 +37,7 @@
 
             <!-- ? Tasks list -->
             <ul class="list-group w-75 mx-auto">
-                <li v-for="task in tasks" class="list-group-item">{{task.text}}</li>
+                <li v-for="task in tasks" class="list-group-item" :class="{'text-decoration-line-through': task.done === true}">{{task.text}}</li>
             </ul>
         </main>
     </div>
