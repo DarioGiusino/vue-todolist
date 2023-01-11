@@ -4,10 +4,7 @@ const app = Vue.createApp({
     name: 'To Do List',
     data() {
         return {
-            newTask: {
-                 text: '',
-                 done: false
-            },
+            newText: '',
             tasks: [
                 {
                     text: 'fare la spesa',
@@ -22,7 +19,12 @@ const app = Vue.createApp({
     },
     methods: {
         addTask(){
-            this.tasks.push(this.newTask);
+            const newTask = {
+                text: this.newText,
+                done: false
+            };
+
+            this.tasks.push(newTask);
         },
         deleteTask(target){
             this.tasks.splice(target, 1);
