@@ -3,6 +3,12 @@ header{
     height: 200px;
 }
 
+/* # MAIN */
+/* ? Tasks list */
 li{
     cursor: pointer;
+}
+
+.li-text::first-letter{
+    text-transform: capitalize;
 }
