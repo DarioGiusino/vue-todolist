@@ -31,8 +31,8 @@
         <main>
             <!-- ? Add task input -->
             <div class="input-group mb-3 w-50 mx-auto">
-                <input type="text" class="form-control" placeholder="Aggiungi elementi alla lista...">
-                <button class="btn btn-outline-secondary" type="button">Aggiungi</button>
+                <input type="text" class="form-control" placeholder="Aggiungi elementi alla lista..." v-model="newTask.text" @keyup.enter="addTask">
+                <button class="btn btn-outline-secondary" type="button" @click="addTask">Aggiungi</button>
             </div>
 
             <!-- ? Tasks list -->
