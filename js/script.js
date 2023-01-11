@@ -19,12 +19,14 @@ const app = Vue.createApp({
     },
     methods: {
         addTask(){
-            const newTask = {
-                text: this.newText,
-                done: false
+            if(this.newText){
+                const newTask = {
+                    text: this.newText,
+                    done: false
+                };
+                
+                this.tasks.push(newTask);
             };
-
-            this.tasks.push(newTask);
             this.clearText();
         },
         deleteTask(target){
