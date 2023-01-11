@@ -25,10 +25,14 @@ const app = Vue.createApp({
             };
 
             this.tasks.push(newTask);
+            this.clearText();
         },
         deleteTask(target){
             this.tasks.splice(target, 1);
         },
+        clearText(){
+            this.newText = '';
+        }
     }
 });
 
