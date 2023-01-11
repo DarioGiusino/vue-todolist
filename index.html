@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,12 +23,18 @@
 <body>
     <div id="app" class="container">
         <!-- # HEADER -->
-        <header class="d-flex justify-content-center w-100">
+        <header class="d-flex justify-content-center w-100 my-3">
             <img class="img-fluid" src="img/todobanner.webp" alt="list title">
         </header>
 
         <!-- # MAIN -->
-        <main></main>
+        <main>
+            <!-- ? Add task input -->
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input type="text" class="form-control" placeholder="Aggiungi elementi alla lista...">
+                <button class="btn btn-outline-secondary" type="button">Aggiungi</button>
+            </div>
+        </main>
     </div>
 </body>
 </html>
