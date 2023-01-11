@@ -15,6 +15,11 @@ const app = Vue.createApp({
                 }
             ]
         }
+    },
+    methods: {
+        deleteTask(target){
+            this.tasks.splice(target, 1);
+        }
     }
 });
 
